@@ -56,6 +56,6 @@ app.use("/", shortlist);
 app.use("/", resume);
 app.use("/", user);
 
-const server = app.listen(5000, (req, res) => {
+const server = app.listen(process.env.PORT, (req, res) => {
   console.log(`Server started on 5000!!!`);
 });
