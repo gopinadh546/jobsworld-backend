@@ -56,6 +56,10 @@ app.use("/", shortlist);
 app.use("/", resume);
 app.use("/", user);
 
+app.get("/", (req, res) => {
+  res.json({message: "Welcome to Jobsworld"})
+})
+
 const server = app.listen(process.env.PORT, (req, res) => {
   console.log(`Server started on 5000!!!`);
 });
