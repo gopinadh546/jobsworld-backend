@@ -9,7 +9,7 @@ const database = require("./config/database");
 dotenv.config({ path: "/BackendJW/config/config.env" });
 const res = require("express/lib/response");
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
+const cors = require("cors"); 
 
 const port = 4000;
 const morgan = require("morgan");
