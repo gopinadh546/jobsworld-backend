@@ -63,3 +63,5 @@ app.get("/", (req, res) => {
 const server = app.listen(process.env.PORT, (req, res) => {
   console.log(`Server started on 5000!!!`);
 });
+
+module.exports = app
